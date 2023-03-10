@@ -18,22 +18,26 @@ header {
 nav {
     background-color: #40C9A2;
     grid-area: nav;
+    text-align: center;
 }
 
 main {
     background-color: #664147;
     color: #72E0AC;
     grid-area: main;
+    text-align: center;
 }
 
 aside {
     background-color: #38B39C;
     grid-area: aside;
+    text-align: center;
 }
 
 footer {
     background-color: #4B6F6E;
     grid-area: footer;
+    text-align: center;
 }
 
 /* Using an element selector to view headings without a class */
@@ -53,4 +57,24 @@ footer {
     border-radius: 40px;
     border: 5px solid #666;
     box-shadow: 5px 5px 5px;
+}
+
+.scroller {
+    padding:1rem;
+    background: #3D8682;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 200vw;
+    margin: auto;
+}
+
+.image-box {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+.image-box img {
+    height: 300px;
+    width: 1000px;
 }
