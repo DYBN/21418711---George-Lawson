@@ -54,7 +54,7 @@ nav {
 }
 
 main {
-    background-color: #664147;
+    background-color: rgba(255, 255, 255, 0.5);
     color: #72E0AC;
     grid-area: main;
     text-align: center;
@@ -128,7 +128,7 @@ textarea {
     background: lightgray
 }
 
-.animatetext{
+/* .animatetext{
     color: black;
     font-size: 50px;
     font-weight: bold;
@@ -153,7 +153,7 @@ textarea {
         background-position: 600px;
     }
 }
-
+ */
 figure {
     border: 1px black solid;
     background: white;
