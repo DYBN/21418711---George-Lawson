@@ -59,22 +59,28 @@ footer {
     box-shadow: 5px 5px 5px;
 }
 
+/* Creating the scroller class */
 .scroller {
     padding:1rem;
-    background: #3D8682;
+    background: #ffffff96;
     border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     max-width: 1000px;
-    width: 200vw;
+    width: 500vw;
     margin: auto;
 }
 
+/* implimenting the image boxes, spacing of 40px and palcing on the x axis */
 .image-box {
     display: flex;
     gap: 40px;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
+/* Settiing image size and alignment in the scroller widget */
 .image-box img {
+    scroll-snap-align: center;
     height: 300px;
     width: 1000px;
 }
