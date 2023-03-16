@@ -2,12 +2,20 @@
 Style.css
 Shift Alt + A
 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@200&family=Rubik:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
+*{
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+}
 
 header {
     background-color: #3D8682;
@@ -38,19 +46,6 @@ footer {
     background-color: #4B6F6E;
     grid-area: footer;
     text-align: center;
-}
-
-/* Using an element selector to view headings without a class */
-/* h1 {
-    color:red;
-    background-color:black;
-} */
-
-/* Using a defualt class to assign a colour, background and font to specific elements */
-.defaultClass {
-    color:rgb(34, 235, 218);
-    background-color: pink;
-    font-size: 100px;
 }
 
 .myForm{
