@@ -79,3 +79,23 @@ footer {
     height: 300px;
     width: 1000px;
 }
+
+/* Structure of the form using a grid layout */
+form {
+    display: grid;
+    width: 400px;
+    grid-template: 25% 75%;
+    grid-gap: 0.5em
+}
+
+input[type="submit"] {
+    grid-column: 2;
+}
+
+textarea {
+    grid-column: 2;
+}
+
+.menutitle{
+    color: white
+}
