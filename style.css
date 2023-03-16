@@ -5,8 +5,8 @@ Shift Alt + A
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@200&family=Rubik:wght@500&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
 }
 
 *{
@@ -16,6 +16,9 @@ Shift Alt + A
     font-family: 'Rubik', sans-serif;
 
 }
+
+body {
+    background-color: blue;}
 
 header {
     background-color: #3D8682;

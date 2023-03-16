@@ -77,3 +77,48 @@ display: none;
     margin-top: 0.3em;
     border-top: 0.2em solid white;
 }     
+
+nav ul ul {
+    background-color: #A3F7B5;
+    padding: 0;
+    width: 100%;
+
+}
+
+nav > ul > li:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+nav li ul li:hover {
+    background-color: #ffa90a;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  .scroller {
+    padding:1rem;
+    background: #ffffff96;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    max-width: 500px;
+    width: 500vw;
+    margin: auto;
+}
+
+/* implimenting the image boxes, spacing of 40px and palcing on the x axis */
+.image-box {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+/* Settiing image size and alignment in the scroller widget */
+.image-box img {
+    scroll-snap-align: center;
+    height: 300px;
+    width: 1000px;
+}
