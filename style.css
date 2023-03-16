@@ -5,7 +5,7 @@ Shift Alt + A
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@200&family=Rubik:wght@500&display=swap');
 
 * {
-    margin: 1;
+    margin: 0;
     padding: 0;
 }
 
@@ -14,15 +14,35 @@ Shift Alt + A
     font-family: 'Lato', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Rubik', sans-serif;
-
 }
 
 body {
-    background-color: blue;}
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #00ff87, #60efff, #ff0f7b, #f89b29);
+    background-size: 300% 300%;
+    animation: colourscroll 15s ease-in-out infinite;
+}
 
+@keyframes colourscroll{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+
+.imgresize {
+    width: 100%;
+    height: auto;
+  }
+  
 header {
-    background-color: #3D8682;
-    color: #664147;
     grid-area: header;
 }
 
@@ -30,6 +50,7 @@ nav {
     background-color: #40C9A2;
     grid-area: nav;
     text-align: center;
+    font-size: 25px;
 }
 
 main {
@@ -37,18 +58,21 @@ main {
     color: #72E0AC;
     grid-area: main;
     text-align: center;
+    padding: 2em;
 }
 
 aside {
     background-color: #38B39C;
     grid-area: aside;
     text-align: center;
+    padding: 2em;
 }
 
 footer {
     background-color: #4B6F6E;
     grid-area: footer;
     text-align: center;
+    padding: 2em;
 }
 
 .myForm{
@@ -64,7 +88,7 @@ footer {
     border-radius: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     max-width: 1000px;
-    width: 500vw;
+    width: 75vw;
     margin: auto;
 }
 
@@ -74,13 +98,13 @@ footer {
     gap: 40px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    padding-bottom: 1em;
 }
 
 /* Settiing image size and alignment in the scroller widget */
 .image-box img {
     scroll-snap-align: center;
     height: 300px;
-    width: 1000px;
 }
 
 /* Structure of the form using a grid layout */
@@ -100,5 +124,37 @@ textarea {
 }
 
 .menutitle{
-    color: white
+    color: black;
+    background: lightgray
+}
+
+.animatetext{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background: linear-gradient(to right,
+    Black 0, white 10%, Black 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: reflect 4s infinite linear;
+    padding-left: 100px;
+}
+
+@keyframes reflect {
+    0%{
+        background-position: -200px;
+    }
+
+    50%{
+        background-position: 400px;
+    }
+    100%{
+        background-position: 600px;
+    }
+}
+
+figure {
+    border: 1px black solid;
+    background: white;
 }
