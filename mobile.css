@@ -14,8 +14,8 @@ body {
     height: 0.8em;
     width: 1.25em;
     display: block;
-    border-top: 0.2em solid #E5F9E0;
-    border-bottom: 0.2em solid #E5F9E0;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
     border-radius: 0.1em;
 }
 
@@ -24,12 +24,12 @@ body {
     position:absolute;
     width: 1.25em;
     margin-top: 0.3em;
-    border-top: 0.2em solid #E5F9E0;
+    border-top: 0.2em solid white;
 }
 
 nav {
     display: block;
-    background-color: #E5F9E0;
+    background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
     width: 50%;
@@ -77,3 +77,24 @@ display: none;
     margin-top: 0.3em;
     border-top: 0.2em solid white;
 }     
+
+nav ul ul {
+    background-color: #f0f0f0;
+    padding: 0;
+    width: 100%;
+
+}
+
+nav > ul > li:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+nav li ul li:hover {
+    background-color: #04b8ff;
+}
+
+ul {
+    list-style-type: none;
+  }
+
