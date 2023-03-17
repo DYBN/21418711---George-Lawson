@@ -146,14 +146,6 @@ p {
     max-width: 1000px;
 }
 
-/* Structure of the form using a grid layout */
-form {
-    display: grid;
-    width: 400px;
-    grid-template: 50% 50%;
-    grid-gap: 0.5em
-}
-
 figure {
     border: 1px black solid;
     background: white;
@@ -265,33 +257,42 @@ figure {
 /* Site Report Site Report Site Report Site Report Site Report Site Report Site Report Site Report Site Report Site Report  */
 
 /* Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page  */
+
+/* Centre the form */
+form
+{
+    margin-left: 10vw;
+    margin-right:10vw;
+}
+
+
 .myForm{
     border-radius: 40px;
     border: 5px solid black;
     box-shadow: 5px 5px 5px;
 }
 
-input[type="submit"] {
-    grid-column: 2;
-}
-
-textarea {
-    grid-column: 2;
-}
 
 input {
     border-radius: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 10px;
-    width: 60vw
+    margin: 5px;
+    width: 60vw;
+    max-width: 750px;
+    grid-column: 2;
 }
 
 textarea {
     border: 3px solid black;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 10px;
+    margin: 5px;
     border-radius: 10px;
+    width: 60vw;
+    max-width: 750px;
 }
 
+/* Structure of the form using a grid layout */
 
 
