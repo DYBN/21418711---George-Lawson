@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Style sheets referenced in the head -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +12,16 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
 </head>
+
 <body id="clicked">
 
     <header>
+<!-- Adding the navigation class to the home page (hamburger) -->
+        <a class="on showNavFlip" href="#clicked"></a>
+        <a class="off showNav" href="#"></a>
 
-    <a class="on showNavFlip" href="#clicked"></a>
-    <a class="off showNav" href="#"></a>
-
-    <h1 class="animatetext">Home Page</h1>
     </header>
-
+<!-- navigation bar  -->
     <nav>
         <ul>
             <li class="menutitle">Home Page
@@ -50,19 +52,24 @@
         </ul>
     </nav>
 
+<!--     main body of the home page with text  -->
     <main>
         <h1>George Lawson</h1>
-        <P>I'm a student at The University of Northampton studying Software Enginnering. I have a passion for videogames and have years of experiance working in the field.</P>
+        <P>I'm a student at The University of Northampton studying Software Engineering. I have a passion for videogames
+            and have years of experience working in the field.</P>
     </main>
 
+<!--     Images set to aside on (referencing the grid)  -->
     <aside>
-        <img class="imgresize" src="images\GeorgeLawson.jfif" alt="A really hot guy and some girl">
-        <img class="imgresize" src="images\cat.jpg" alt="A really hot guy and some girl">
+        <img class="imgresize" src="images/GeorgeLawson.jfif" alt="An image of George Lawson">
+        <img class="imgresize" src="images/cat.jpg" alt="An image of Godric the cat">
     </aside>
 
+<!-- footer shown at the bottom of the page -->
     <footer>
-        &copy George Lawson 2023
+        &copy; George Lawson 2023
     </footer>
-    
+
 </body>
+
 </html>
