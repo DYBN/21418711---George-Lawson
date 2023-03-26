@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
 }
 
+/* place navigation on grid, align the text in the centre of each column */
 nav ul {
     list-style-type: none;
     display: grid;
@@ -21,6 +22,7 @@ nav ul {
     text-align: center;
 }
 
+/* colour text black */
 nav ul a {
     text-decoration: none;
     color: black;
@@ -30,6 +32,7 @@ nav > ul > li {
     position: relative;
 }
 
+/* transition the menu options in when the mouse hovers over  */
 nav ul ul {
     position: absolute;
     display: block;
@@ -43,7 +46,7 @@ nav ul ul {
 
 nav > ul > li:hover ul {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: all;
 }
 
 nav li ul li:hover {

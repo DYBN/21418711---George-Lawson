@@ -1,3 +1,6 @@
+/* Mobile CSS style sheet */
+
+/* Change the grid when on the mobile view to fit everything on the page */
 body {
     display: grid;
     grid-template-columns: 100%;
@@ -10,6 +13,7 @@ body {
         ;
 }
 
+/* Creation of the hamburger navigation  */
 .showNav {
     height: 0.8em;
     width: 1.25em;
@@ -38,10 +42,12 @@ nav {
     transition: transform 0.5s ease-in;
 }
 
+/* When the hamburger is clicked on the navigation bar shows */
 .clicked .on {
     display: block;
 }
 
+/* When the hamburger is clicked off the navigation bar is hidden */
 #clicked .off {
 display: none;
 }
@@ -78,6 +84,7 @@ display: none;
     border-top: 0.2em solid white;
 }     
 
+/* Navigation options mobile view, highlights when hovered over */
 nav ul ul {
     background-color: #f0f0f0;
     padding: 0;
@@ -87,7 +94,7 @@ nav ul ul {
 
 nav > ul > li:hover ul {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: all;
 }
 
 nav li ul li:hover {

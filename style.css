@@ -2,13 +2,17 @@
 Style.css
 Shift Alt + A
 */
+
+/* Importing front from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@200&family=Rubik:wght@500&display=swap');
 
+/* Padding and margin set globaly to 0,0*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Importing font family in line with imported font */
 *{
     color: rgb(0, 0, 0);
     font-family: 'Lato', sans-serif;
@@ -16,6 +20,7 @@ Shift Alt + A
     font-family: 'Rubik', sans-serif;
 }
 
+/* Creation of an animated background. 500% of the screen size scrolling. */
 body {
     height: 100vh;
     width: 100%;
@@ -44,6 +49,7 @@ body {
     height: auto;
   }
   
+/* Setting the style for each area of the grid */
 header {
     grid-area: header;
 }
@@ -90,6 +96,7 @@ footer {
     background: white;
 }
 
+/* setting text atributes */
 h1 {
     padding: 10px;
     font-size: 30px;
@@ -107,6 +114,7 @@ p {
 
 /* PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO  */
 
+/* Making a display box class, this appears on the prortfolio and report */
 .displaybox{
     width: 95%;
     height: auto;
@@ -130,7 +138,7 @@ p {
     margin: auto;
 }
 
-/* implimenting the image boxes, spacing of 40px and palcing on the x axis */
+/* implimenting the image boxes, spacing of 40px and placing on the x axis */
 .image-box {
     display: flex;
     gap: 30px;
@@ -151,10 +159,12 @@ figure {
     background: white;
 }
 
+/* Setting the bullet points to be transparent */
 .qaskills li {
     color: rgba(0, 0, 0, 0);
 }
 
+/* making the bar class (Transparent white bars displayed) */
 .bar {
     background: rgba(255, 255, 255, 0.5);
     display: block;
@@ -163,6 +173,7 @@ figure {
     border-radius: 5px;
 }
 
+/* Making the bar fill up with a gradient ontop of the original bar */
 .bar span{
     height: 10px;
     float: left;
@@ -170,11 +181,13 @@ figure {
     border-radius: 5px;
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .jira{
     width: 95%;
     animation: jira 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes jira{
     0%{width: 0%;
     }
@@ -182,11 +195,13 @@ figure {
     }
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .testrail{
     width: 97%;
     animation: testrail 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes testrail{
     0%{width: 0%;
     }
@@ -194,11 +209,13 @@ figure {
     }
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .pc{
     width: 90%;
     animation: pc 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes pc{
     0%{width: 0%;
     }
@@ -206,11 +223,13 @@ figure {
     }
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .vr{
     width: 95%;
     animation: vr 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes vr{
     0%{width: 0%;
     }
@@ -218,11 +237,13 @@ figure {
     }
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .playstation{
     width: 75%;
     animation: playstation 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes playstation{
     0%{width: 0%;
     }
@@ -230,11 +251,13 @@ figure {
     }
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .xbox{
     width: 70%;
     animation: xbox 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes xbox{
     0%{width: 0%;
     }
@@ -242,19 +265,19 @@ figure {
     }
 }
 
+/* Making the class for each QA skill and setting the width being the amount the bar fills up. The duration is set to 4 seconds. */
 .mobile{
     width: 75%;
     animation: mobile 4s;
 }
 
+/* using keyframes to animate the bars to the specified width */
 @keyframes mobile{
     0%{width: 0%;
     }
     100%{width: 75%;
     }
 }
-
-/* Site Report Site Report Site Report Site Report Site Report Site Report Site Report Site Report Site Report Site Report  */
 
 /* Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page Contact Page  */
 
@@ -265,13 +288,12 @@ form
     margin-right:10vw;
 }
 
-
+/* Making the form style fit with the website theme */
 .myForm{
     border-radius: 40px;
     border: 5px solid black;
     box-shadow: 5px 5px 5px;
 }
-
 
 input {
     border-radius: 10px;
@@ -292,7 +314,3 @@ textarea {
     width: 60vw;
     max-width: 750px;
 }
-
-/* Structure of the form using a grid layout */
-
-
